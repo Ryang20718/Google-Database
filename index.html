@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-messaging.js"></script>
+</head>
+<body>
+    <div class = "mainDiv">
+        <textarea id = "mainText"></textarea>
+        <button id = "submitBtn" onClick = "submitClick()">Click Me</button>
+    </div>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCy6Vl9ahB3W40SjOy4y4ivUESwO60XafI",
+    authDomain: "database-web-proj.firebaseapp.com",
+    databaseURL: "https://database-web-proj.firebaseio.com",
+    projectId: "database-web-proj",
+    storageBucket: "",
+    messagingSenderId: "431707200131"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
+    
+</script>
+    
+    
+    <script src = "script.js"></script>
+
+</body>
+</html>
+
+
