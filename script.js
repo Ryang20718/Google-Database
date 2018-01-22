@@ -8,16 +8,19 @@ function submitClick() {
     var firebaseRef = firebase.database().ref();
     var message = mainText.value;
     firebaseRef.child("URL").set(message);
-    firebaseRef.child("L").set(message);
     document.getElementById('displayLink').innerHTML = message;
     
 }
 
+
+
 /*
-function getUrl() {
-    var firebaseGetRef = firebase.database().ref().child("L");
-    firebaseGetRef.on('value', function (snapshot)) {
-    linkDisplay.innerHTML = snapshot.val();
-    }
+function getUrl(){
+    var ref = firebase.databae().ref('URL');
+    ref.on('value',gotData);
+        function gotData(data){
+            console.log(data.val());
+            console.log("kinda sucess");
+        }
 }
 */

@@ -74,8 +74,14 @@
         firebase.initializeApp(config);
         var database = firebase.database();
         
-        var ref = database.ref('L')
+        var ref = database.ref('URL');
         ref.on('value',gotData);
+        
+        function gotData(data){
+            var message = data.val();
+            document.getElementById("displayLink").innerHTML = message;
+            console.log("message");
+        }
         
     </script>
 
