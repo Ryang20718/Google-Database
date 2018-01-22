@@ -3,6 +3,5 @@ var submitBtn = document.getElementById("submitBtn");
 function submitClick(){
     var firebaseRef = firebase.database().ref();
     var message = mainText.value;
-    firebaseRef.push().set(message);
-    firebaseRef.child("Text").set(message);
+    firebaseRef.child("URL").set(message);
 }
