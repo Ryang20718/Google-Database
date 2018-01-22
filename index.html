@@ -73,6 +73,10 @@
         };
         firebase.initializeApp(config);
         var database = firebase.database();
+        
+        var ref = database.ref('L')
+        ref.on('value',gotData);
+        
     </script>
 
 
