@@ -43,10 +43,21 @@
 
     <div id="page-splash">
         <h3 class="logo">L-Transfer</h3>
-         <textarea id="mainText"></textarea>
+        <div class="group">
+            <input id = "mainText" type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Name</label>
+        </div>
         <button class="mdl-button--raised mdl-button mdl-js-button mdl-js-ripple-effect" id="submitBtn" onClick="submitClick()">Click Me</button>
-        <label id = "displayLink"></label>
+        <h6 id="displayLink">Your Link Here</h6>
     </div>
+
+
+
+
+
+
 
 
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
@@ -62,10 +73,6 @@
         };
         firebase.initializeApp(config);
         var database = firebase.database();
-
-
-        
-        
     </script>
 
 
