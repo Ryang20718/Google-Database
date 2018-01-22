@@ -325,7 +325,7 @@ body 				 { background:url(https://scotch.io/wp-content/uploads/2014/07/61.jpg);
 /* form starting stylings ------------------------------- */
 .group 			  { 
   position:relative; 
-  margin-bottom:45px; 
+  margin-bottom:10px; 
 }
 input 				{
   font-size:18px;
@@ -339,16 +339,16 @@ input:focus 		{ outline:none; }
 
 /* LABEL ======================================= */
 label 				 {
-  color:#999; 
+  color:black;; 
   font-size:18px;
   font-weight:normal;
   position:absolute;
   pointer-events:none;
   left:5px;
   top:10px;
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
+  transition:0.3s ease all; 
+  -moz-transition:0.3s ease all; 
+  -webkit-transition:0.3s ease all;
 }
 
 /* active state */
