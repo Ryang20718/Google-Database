@@ -4,4 +4,5 @@ function submitClick(){
     var firebaseRef = firebase.database().ref();
     var message = mainText.value;
     firebaseRef.child("URL").set(message);
+    document.getElementById('displayLink').innerHTML = message;
 }

@@ -366,7 +366,7 @@ input:focus ~ label, input:valid ~ label 		{
   width:0;
   bottom:1px; 
   position:absolute;
-  background:#5264AE; 
+  background:black; 
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
@@ -391,7 +391,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   top:25%; 
   left:0;
   pointer-events:none;
-  opacity:0.5;
+  opacity:0.4;
 }
 
 /* active state */
@@ -403,14 +403,14 @@ input:focus ~ .highlight {
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
-	from { background:#5264AE; }
+	from { background:black; }
   to 	{ width:0; background:transparent; }
 }
 @-moz-keyframes inputHighlighter {
-	from { background:#5264AE; }
+	from { background:black; }
   to 	{ width:0; background:transparent; }
 }
 @keyframes inputHighlighter {
-	from { background:#5264AE; }
+	from { background:black; }
   to 	{ width:0; background:transparent; }
 }
