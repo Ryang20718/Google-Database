@@ -44,14 +44,20 @@
     <div id="page-splash">
         <h3 class="logo">L-Transfer</h3>
         <div class="group">
-            <input id = "mainText" type="text" required>
+            <input id="mainText" type="text" required>
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>Link</label>
         </div>
         <button class="mdl-button--raised mdl-button mdl-js-button mdl-js-ripple-effect" id="submitBtn" onClick="submitClick()">Insert Link</button>
         <h6 id="displayLink">Your Link Here</h6>
+
+
+
+
+
     </div>
+
 
 
 
@@ -73,10 +79,19 @@
         };
         firebase.initializeApp(config);
         var database = firebase.database();
+
+        var ref = database.ref('URL');
+        ref.on('value', gotData);
+
+        function gotData(data) {
+            var message = data.val();
+            document.getElementById("displayLink").innerHTML = message;
+            console.log("message");
+        }
+
+
         
-        var ref = database.ref('L')
-        ref.on('value',gotData);
-        
+    
     </script>
 
 
